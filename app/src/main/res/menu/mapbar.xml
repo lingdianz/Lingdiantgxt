@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btndis"
+        android:title="取消"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btnsure"
+        android:icon="@mipmap/sure"
+        android:title="确定"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/btnset"
+        android:icon="@mipmap/shezhi"
+        android:title="重置位置"
+        app:showAsAction="never"/>
+</menu>

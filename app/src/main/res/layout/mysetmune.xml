@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setlayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/layoutbian"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imgphoto1"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/logo"
+            android:layout_margin="@dimen/dp10"/>
+
+        <TextView
+            android:id="@+id/tvname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/账号"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </View>
+        <TextView
+            android:id="@+id/tvnews3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp50"
+            android:text="@string/username"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_margin="@dimen/dp10"/>
+        <ImageView
+            android:id="@+id/imgnews4"
+            android:layout_width="@dimen/dp8"
+            android:layout_height="@dimen/dp8"
+            android:background="@mipmap/redpoint" />
+        <TextView
+            android:id="@+id/tvgo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toright"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_margin="@dimen/dp10"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp3"
+        android:background="@android:color/transparent">
+    </View>
+
+</LinearLayout>

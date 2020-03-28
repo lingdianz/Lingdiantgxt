@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/blue0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/blue3">
+
+    <Button
+        android:id="@+id/btnreturn"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/blue0"
+        android:text="返回"
+        android:background="@color/blue3"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tvkfname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Apple在线"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:gravity="center"/>
+    <View
+        android:layout_width="60dp"
+        android:layout_height="wrap_content">
+    </View>
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue1"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/msg_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue1"
+        android:gravity="center">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/jiahao1"/>
+        <EditText
+            android:id="@+id/msg_edt"
+            android:hint="a"
+            android:textSize="18dp"
+            android:background="@drawable/yuajiaotx"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/send_btn"
+            android:text="发送"
+            android:textSize="20dp"
+            android:background="@drawable/yuajiao"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"/>
+    </LinearLayout>
+
+</LinearLayout>

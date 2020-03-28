@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:layoutDirection="ltr">
+
+<TextView
+    android:id="@+id/label_group_normal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:paddingBottom="8dp"
+    android:paddingLeft="32dp"
+    android:paddingTop="8dp"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:background="@android:color/transparent"
+    android:text="测试数据"/>
+
+    <TextView
+        android:id="@+id/tvcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:text="1/4"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:textSize="15dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/webshow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hesiod.lingdiantgxt.webshow">
+    <ImageView
+        android:id="@+id/imgback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/bluepp"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvtest"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scrollbars="vertical"
+            android:textSize="20sp"
+            android:background="@color/blue1"/>
+        <ListView
+            android:id="@+id/lvtest"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </ListView>
+        <!--<ImageView-->
+            <!--android:id="@+id/imgtesttp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/blue0"-->
+            <!--android:scrollbars="vertical"/>-->
+        <Button
+            android:id="@+id/btntest"
+            android:text="加载"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@drawable/yuajiao"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/ring1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

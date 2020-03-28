@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/blue1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--页头-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/blue3">
+
+        <Button
+            android:id="@+id/btnreturn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/blue1"
+            android:text="返回"
+            android:background="@color/blue3"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="个人信息"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="60dp"
+            android:layout_height="30dp">
+        </View>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvusermessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"/>
+
+</LinearLayout>

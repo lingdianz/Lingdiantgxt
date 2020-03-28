@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:elevation="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/blue0"
+    android:foreground = "?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/blue3to1">
+
+        <TextView
+            android:id="@+id/tvgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是我的十个字的分组"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"/>
+
+        <ImageView
+            android:id="@+id/imgtimer"
+            android:src="@mipmap/noise"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <ImageView
+            android:id="@+id/imgset"
+            android:src="@mipmap/jiahao1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

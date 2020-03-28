@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">智能调光</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <!--<string name="title_activity_controlroom">controlroom</string>-->
+    <string name="亮度_0_1_100">亮度：（0/1-100）</string>
+    <string name="亮度调节">亮度调节</string>
+    <string name="返回">返回</string>
+    <string name="设置">设置</string>
+    <string name="退出程序">退出程序</string>
+    <string name="账号">账号</string>
+    <string name="username">username</string>
+    <string name="toright"><![CDATA[>]]></string>
+
+    <!--<string-array name="spgoup">-->
+    <!--<item>wifi设备a01</item>-->
+    <!--<item>wifi设备a02</item>-->
+    <!--<item>wifi设备a03</item>-->
+    <!--<item>蓝牙设备b01</item>-->
+    <!--<item>蓝牙设备b02</item>-->
+    <!--<item>蓝牙设备b03</item>-->
+    <!--</string-array>-->
+
+</resources>

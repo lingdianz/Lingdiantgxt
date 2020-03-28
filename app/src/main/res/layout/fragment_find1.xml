@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgbk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bluepp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvtest"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="11"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/blue1"
+            android:scrollbars="vertical"
+            android:textSize="20dp" />
+        <ImageView
+            android:id="@+id/imgtest"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/jiahao1"/>
+        <Button
+            android:id="@+id/btntest"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="测试"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:background="@drawable/yuajiao"/>
+
+        <Button
+            android:id="@+id/btngo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="跳转到"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:background="@drawable/yuajiao"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/ring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+

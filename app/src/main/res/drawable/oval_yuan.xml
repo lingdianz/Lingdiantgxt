@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+    <!--矩形（rectangle）、椭圆形(oval)、线性形状(line)、环形(ring)-->
+    <solid
+        android:color="@color/blue3" />
+
+    <size android:width="50dp"
+        android:height="50dp" />
+
+</shape>

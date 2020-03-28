@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tiaoguang"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/yuajiaotxqian">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/noise"/>
+
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="@color/blue5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            android:textColor="@color/blue5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/blue0"
+        android:layout_centerHorizontal="true"
+        android:foreground = "?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutdata"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/tvvtg"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/oval_yuan"/>
+                <TextView
+                    android:id="@+id/tvcr"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/oval_yuan"/>
+
+                <TextView
+                    android:id="@+id/tvwd"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/oval_yuan"/>
+
+                <TextView
+                    android:id="@+id/tvbn"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:background="@drawable/oval_yuan"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvstristimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue3"
+                    android:textSize="20sp"
+                    android:text="总定时/开"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@+id/imgtimer"
+                    android:src="@mipmap/noise"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true" />
+
+                <Button
+                    android:id="@+id/btnsure"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:text="确定"
+                    android:textColor="@color/blue0"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/yuajiao"/>
+
+                <ProgressBar
+                    android:id="@+id/ring"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/lvtimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="bottom|center"
+                    android:background="@mipmap/noisedis">
+                </ListView>
+
+            <LinearLayout
+                android:id="@+id/layoutnew"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvtype"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/blue3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:id="@+id/tvsetvtg"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/blue3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:id="@+id/tvsetcr"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/blue3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+

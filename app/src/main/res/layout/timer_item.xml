@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/blue1"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1："
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+    <CheckBox
+        android:id="@+id/cbtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开"
+        android:textSize="18sp"
+        android:textColor="@color/blue5"/>
+    <TextView
+        android:id="@+id/tvshi"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/blue0"
+        android:background="@color/blue3"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/tvdian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/blue0"
+        android:background="@color/blue3"/>
+    <TextView
+        android:id="@+id/tvfen"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="30"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/blue0"
+        android:background="@color/blue3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="亮度："
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/tvbright"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/blue0"
+        android:background="@color/blue3"/>
+
+</LinearLayout>

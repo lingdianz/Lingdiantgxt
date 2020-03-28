@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue1"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:id="@+id/layoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnreload"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/yuajiao"
+            android:layout_margin="10dp"
+            android:text="我"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue0"/>
+
+        <Button
+            android:id="@+id/btnputong"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@color/blue1"
+            android:text="普通"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue5"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnweixing"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@color/green3"
+            android:text="卫星"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue0"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cblukuang"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@color/vtg_1"
+            android:text="路况"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue0"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cbreli"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@color/red3"
+            android:text="热力"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue0"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yuajiao"
+            android:textSize="18sp"
+            android:textColor="@color/blue0"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:maxWidth="300dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btngengxin"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="刷新"
+            android:textStyle="bold"
+            android:textColor="@color/blue0"
+            android:background="@drawable/yuajiao"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/ring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>
+
